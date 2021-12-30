@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <title>site responsivo</title>
+
+    <style type="text/css">
+      #home{
+        background: #ffc107;
+	      color: white;
+      }
+
+
+      @media(max-width: 520px){  /*tira margem do botão*/
+        .mg{
+          margin-left: 230px;
+        }
+
+        .imag:hover{
+          filter: sepia(100%);
+        }
+
+        .line{
+          line-height: 1.5;
+        color: white;}
+        .buttom{
+          margin-left: 0!important;
+        }
+        .d{
+          display: inline;;
+        }
+
+        .mt{
+          margin-top: 20px;
+        }
+        .oculta_imagem{
+            display: block;
+            display: none;
+        }
+        .centraliza-sm{
+            margin-right: 60px;
+        }
+      }
+    </style>
+  </head>
+  <body id="home">
+
+    <!--Div principal-->
+    <div class="container-fluid">
+
+
+          <!-- Inicio Navegação-->
+        <header>
+
+               <div class="navbar navbar-expand-sm bg-warning">
+
+              <!--Logo-->
+              <div class="container-fluid ml-4">
+                  <a href="#" class="navbar-brand"><img src="/img/logo.png" width="142px"></a>
+
+
+              <!--Navegacao principal-->
+                  <!--Menu hambúrger-->
+                  <button class="navbar-toggler hamburger border-light bt" data-toggle="collapse" data-target="#navegacao">
+                    <span class="navbar-toggler-icon line"><i class="bi bi-border-width"></i></span>
+                  </button>
+
+                  <div class="collapse navbar-collapse mg" id="navegacao">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="" class="nav-link text-light">HOME</a>
+                        </li>
+
+                        <li class="nav-item ">
+                          <a href="" class="nav-link text-light">Recursos</a>
+                        </li>
+
+                        <li class="nav-item">
+                          <a href="" class="nav-link text-light">Benefícios</a>
+                        </li>
+
+                        <li class="nav-item">
+                          <a href="" class="nav-link text-light">Preços</a>
+                        </li>
+
+                        <li>
+                            <button class="btn btn-outline-light ml-4 buttom">Entrar</button>
+                        </li>
+                    </ul>
+                  </div>
+              </div>
+            </div>
+      </header>
+        <!--FIM navegação-->
+
+
+        <!--Conteúdo-->
+        <div class="row align-items-center justify-content-center ml-5">
+
+          <!--textos-->
+          <div class="col-md-6 mt centraliza-sm">
+              <!--Texto principal-->
+              <h1 class="ml-3">
+                Suas contas<br> descomplicadas
+              </h1>
+              <!--minitexto-->
+              <h6 class="ml-3">
+                Usado por mais de 1 milhão de pessoas, o Finans é uma ferramenta online<br> que vai facilitar sua vida
+                financeira.
+              </h6>
+              <br>
+
+              <!--entrada de e-mail-->
+              <div class="input-group col-md-8 col-sm-6">
+                  <input class="form-control " type="text" placeholder="e-mail">
+                  <div class="input-group-append  ">
+                    <button class="btn btn-outline-secondary bg-primary text-light" type="button" id="button-addon1">Cadastre-se</button>
+                  </div>
+              </div>
+
+              <!--icones do disponível-->
+              <div class="mt-4">
+                <h6 class="ml-3">Disponível para <a class="btn btn-outline-dark mr-1"><i class="fab fa-android fa-lg"></i> </a><a class="btn btn-outline-dark ml-1"><i class="fab fa-apple fa-lg"></i></a></h6>
+              </div>
+          </div>
+
+                <!--Imagem mulher-->
+                <div class="col-md-6  col-sm-6 oculta_imagem">
+                  <img src="./img/capa-mulher.png">
+                </div>
+
+        </div>
+      </div>
+
+
+
+        <!--Sessão saiba para onde vai o seu dinheiro-->
+        <section class="bg-white" style="padding:60px;">
+              <div class="container">
+                <div class="row">
+                     <div class="col-md-6 d-flex">
+                      <div class="align-self-center">
+                        <h2 class="text-dark"><strong>Saiba para onde vai o seu dinheiro</strong></h2>
+                        <p class="text-dark  mb-2">Com o Finans, você categoriza todos os seus lançamentos.Com gráficos<br>
+                            simples, você sabe de onde vem e para onde vai o seu dinheiro.</p>
+                        <a class="btn btn-primary">
+                          Veja mais
+                        </a>
+                  </div>
+                </div>
+                  <div class="col-md-6">
+                      <img src="img/saiba.png" class="img-fluid">
+                  </div>
+
+
+                </div>
+
+              </div>
+        </section>
+
+
+        <!--Sessão pare de pagar juros-->
+        <section class="bg-white" style="padding:60px;">
+          <div class="container">
+            <div class="row">
+                 <div class="col-md-6">
+                      <img src="img/juros.png" class="img-fluid">
+                 </div>
+                    <div class="col-md-6 d-flex">
+                      <div class="align-self-center" style="vertical-align:middle;">
+                        <h2 class="text-dark"><strong>Pare de pagar juros</strong></h2>
+                        <p class="text-dark  mb-2">Manter as contas em dia é sempre um problema? O Organizze avisa você:<br>
+                        receba alertas de contas a pagar e a receber.</p>
+                        <a class="btn btn-primary">
+                        Veja mais
+                        </a>
+                      </div>
+                  </div>
+            </div>
+
+          </div>
+    </section>
+
+
+    <!--Seção de itens-->
+    <section class="bg-white" style="padding:60px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="img/facil.png" class="img-fluid mb-2">
+                    <h4 class="text-dark"><strong>Fácil de usar</strong></h4>
+                    <p class="text-dark">O Finans vai além do básico e permite que você<br>
+                    faça controles incríveis.</p>
+                </div>
+
+
+                <div class="col-md-4">
+                  <img src="img/economize.png" class="img-fluid mb-2">
+                  <h4 class="text-dark"><strong>Economize seu tempo</strong></h4>
+                  <p class="text-dark">Tempo é dinheiro!Em segundos, você tem tudo<br>
+                    sob controle..</p>
+                </div>
+
+
+                <div class="col-md-4">
+                  <img src="img/suporte.png" class="img-fluid mb-2">
+                  <h4 class="text-dark"><strong>Suporte amigo</strong></h4>
+                  <p class="text-dark">Dúvidas?Nosso suporte super legal ajuda você</p>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+
+      <!--Rodapé-->
+      <footer class="container-fluid bg-white pt-5 pb-5 ">
+            <div class="container ">
+                  <div class="row ">
+                           <h5 class="text-dark "><strong>Contatos:</strong>
+                            <a href="https://github.com/PyMarcus"><i class="fab fa-github fa-md"></i></a></h5>
+                            <a href="https://www.linkedin.com/in/marcus-vin%C3%ADcius-3a6799214/"><i class="fab fa-linkedin fa-lg ml-1"></i></a></h5>
+                  </div>
+            </div>
+      </footer>
+
+
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
